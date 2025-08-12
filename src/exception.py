@@ -1,5 +1,5 @@
 import sys
-import logging
+from src.logger import logging
 
 # def error_exit(message: str, code: int = 1) -> None:
 #     """
@@ -42,4 +42,13 @@ class CustomException(Exception):
     def __str__(self):
         return self.error_message
 
+
+if __name__ == "__main__":
+
+    try:
+        raise ValueError("An example error")
+    except Exception as e:
+        logging.basicConfig(level=logging.ERROR)
+        logging.error(CustomException(e, sys))
+        print(CustomException(e, sys))  # This will print the formatted error message
    
