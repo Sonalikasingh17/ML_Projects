@@ -8,4 +8,5 @@ catboost
 xgboost
 dill
 ipykernel
+flask
 #-e .
