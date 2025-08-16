@@ -43,7 +43,10 @@ def predict_datapoint():
     
 
 if __name__=="__main__":
-    app.run(host="0.0.0.0", debug=True)  
+    app.run(host="0.0.0.0")  
+
+#  app.run(host="0.0.0.0",debug=True) # while deploying we have to make sure debug is false
+# Note: The debug mode is set to True for development purposes. It should be set to False in production to avoid exposing sensitive information and to improve performance.
 
 # This code is part of a Flask application that serves a machine learning model for predicting student performance based on various features.
 # It includes routes for rendering the home page and processing user input to make predictions.
