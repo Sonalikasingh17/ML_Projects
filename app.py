@@ -42,9 +42,15 @@ def predict_datapoint():
         return render_template('home.html',results=results[0])
     
 
-# if __name__=="__main__":
-#     app.run(host="0.0.0.0")  
+if __name__=="__main__":
+    app.run(host="0.0.0.0", debug=True)  
 
-if __name__ == "__main__":
-    app.run(debug=True)
-      
+# This code is part of a Flask application that serves a machine learning model for predicting student performance based on various features.
+# It includes routes for rendering the home page and processing user input to make predictions.
+# The application uses a custom data class to handle input data and a prediction pipeline to generate results.
+# The application is designed to run on a local server and can be accessed via a web browser.
+# The code is structured to handle both GET and POST requests, allowing users to submit data through a form and receive predictions in response.
+# The application uses Flask's rendering capabilities to display HTML templates and return results to the user.
+# The application is set to run in debug mode, which is useful for development and testing purposes.
+# The code imports necessary libraries such as Flask, NumPy, Pandas, and scikit-learn for data processing and machine learning tasks.
+# The application is designed to be modular, with separate files for data processing and prediction logic, promoting code organization and maintainability.
