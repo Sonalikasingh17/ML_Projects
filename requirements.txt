@@ -9,4 +9,5 @@ xgboost
 dill
 ipykernel
 flask
+streamlit
 #-e .

@@ -1,3 +1,33 @@
+import streamlit as st
+import pickle
+
+st.title("Student Performance Analysis")
+
+# Load your model and preprocessor if you have them
+with open("artifacts/preprocessor.pkl", "rb") as f:
+    preprocessor = pickle.load(f)
+with open("artifacts/model.pkl", "rb") as f:
+    model = pickle.load(f)
+
+# Build your input interface
+gender = st.selectbox("Gender", ["male", "female"])
+# Add remaining inputs similarly...
+
+# Prediction trigger
+if st.button("Predict"):
+    # Form a DataFrame, preprocess, predict
+    input_df = pd.DataFrame([{
+        "gender": gender,
+        # other fields...
+    }])
+    transformed = preprocessor.transform(input_df)
+    prediction = model.predict(transformed)
+    st.success(f"Predicted score: {prediction[0]}")
+
+
+
+
+
 
 from flask import Flask,request,render_template
 import numpy as np
