@@ -1,5 +1,9 @@
 #  Student Performance Analysis
 
+[![Streamlit App](https://img.shields.io/badge/Streamlit-Live%20App-brightgreen?logo=streamlit)](https://studentperformanceanalysis-wovkzsbhskvyyps34cxbnj.streamlit.app/)
+
+---
+
 This project analyzes student performance data to gain insights into the factors that influence academic outcomes.  
 It applies **data preprocessing, exploratory data analysis (EDA), and machine learning models** to predict and understand student success.
 
