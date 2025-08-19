@@ -10,14 +10,15 @@ It applies **data preprocessing, exploratory data analysis (EDA), and machine le
 ---
 
 ##  Project Structure
+
 Student_Performance_Analysis/
 
- - data/ # Dataset(s) used in the project
- - notebooks/ # Jupyter notebooks for EDA & experiments
- - src/ # Source code for data processing & modeling
-  - app.py # Flask web app (if deployed as an application)
- - requirements.txt # List of dependencies
-- README.md # Project documentation
+- `data/` 📊 — Dataset(s) used in the project  
+- `notebooks/` 📒 — Jupyter notebooks for EDA & experiments  
+- `src/` ⚙️ — Source code for data processing & modeling  
+- `app.py` 🌐 — Flask web app (for deployment)  
+- `requirements.txt` 📦 — List of dependencies  
+- `README.md` 📝 — Project documentation  
 ---
 
 ##  Features
