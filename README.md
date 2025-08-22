@@ -71,5 +71,6 @@ python src/components/data_ingestion.py
 streamlit run streamlit_app.py
 ```
 
+--- 
 Made with ❤️ using Python and Streamlit
 
