@@ -44,8 +44,32 @@ The dataset contains information about students' academic performance and relate
 
 ##  Installation & Setup
 
-1. Clone this repository:
+### 1. Clone this repository:
    ```bash
    git clone https://github.com/Sonalikasingh17/Student_Performance_Analysis.git
    cd Student_Performance_Analysis
+```
+
+### 2. Create Virtual Environment
+```bash
+python -m venv venv
+source venv\Scripts\activate
+```
+
+### 3. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Train Models
+```bash
+python src/components/data_ingestion.py
+```
+
+### 5. Launch Web App
+```bash
+streamlit run streamlit_app.py
+```
+
+Made with ❤️ using Python and Streamlit
 
